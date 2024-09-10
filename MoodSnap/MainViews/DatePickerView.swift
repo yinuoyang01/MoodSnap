@@ -18,6 +18,7 @@ struct DatePickerView: View {
                     selection: $moodSnap.timestamp,
                     displayedComponents: [.date, .hourAndMinute]
                 ).datePickerStyle(GraphicalDatePickerStyle())
+                .accessibilityLabel("Date Picker")
                 Divider()
                 Spacer()
             }
